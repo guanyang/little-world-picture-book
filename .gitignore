@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+.npm-cache/
+
+
+# Generated item source crops cache.
+.cache/
+
+# Generated optimized media files.
+public/media/
