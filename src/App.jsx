@@ -25,7 +25,7 @@ const categories = bookCategories.map((category) => ({
 }));
 
 export function App() {
-  const [categoryIndex, setCategoryIndex] = useState(2);
+  const [categoryIndex, setCategoryIndex] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const dragStartX = useRef(null);

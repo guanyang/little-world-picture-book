@@ -52,6 +52,37 @@ npm run build
 npm run preview
 ```
 
+## 部署 (Deployment)
+
+本项目支持一键部署到 **Cloudflare Pages**。
+
+### 方式 A：GitHub 自动集成部署（推荐）
+
+1. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/)。
+2. 导航至 **Workers & Pages** -> **Create application** -> **Pages** -> **Connect to Git**。
+3. 选择你的 GitHub 仓库并点击。
+4. 在 **Build settings** 中选择或填写：
+   - **Framework preset**：`Vite`（或者选择 `None`/`Custom`）
+   - **Build command**：`npm run build`
+   - **Build output directory**：`dist`
+5. 在 **Environment variables (环境变量)** 中配置（非必选，推荐）：
+   - `NODE_VERSION` = `20`
+6. 点击 **Save and Deploy** 开启自动构建部署。此后，每次将代码推送到 GitHub 的 `main` 分支时，Cloudflare 都会自动拉取依赖、运行切图脚本并完成发布。
+
+### 方式 B：本地 Wrangler CLI 命令行部署
+
+如果你更倾向于在本地构建并一键发布，可以使用 Cloudflare Wrangler 命令行工具：
+
+1. 在本地执行生产构建（包含图片预处理）：
+   ```bash
+   npm run build
+   ```
+2. 使用 Wrangler 将构建好的 `dist/` 目录上传部署：
+   ```bash
+   npx wrangler pages deploy dist
+   ```
+   *首次运行会提示登录 Cloudflare 账户，根据终端提示选择项目名称完成绑定即可。*
+
 ## 图片处理流程
 
 项目使用本地设计的分类插画素材板作为源文件。在启动开发或执行构建时，脚本会自动将素材板切分为单张认知对象图片，并将其转换为高压缩率的 WebP 格式。
