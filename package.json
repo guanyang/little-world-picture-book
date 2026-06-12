@@ -7,7 +7,8 @@
     "prepare-images": "node scripts/prepare-images.mjs",
     "dev": "npm run prepare-images && vite --host 127.0.0.1",
     "build": "npm run prepare-images && vite build",
-    "preview": "vite preview --host 127.0.0.1"
+    "preview": "vite preview --host 127.0.0.1",
+    "compress-screenshots": "node scripts/compress-screenshots.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

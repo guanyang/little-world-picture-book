@@ -2,6 +2,12 @@
 
 一个面向低龄儿童的互动式启蒙认知绘本。项目围绕**动物**、**植物**、**蔬菜**、**水果**四个大类展开，每个大类包含 20 个细分认知示例，并配套真实感插画、翻页切换、中文拼音标注、跟读发音和响应式页面布局。
 
+## 运行效果图
+
+| 蔬菜分类 (Vegetables) | 动物分类 (Animals) | 水果分类 (Fruits) |
+| :---: | :---: | :---: |
+| ![蔬菜分类](docs/images/screenshot_vegetables.png) | ![动物分类](docs/images/screenshot_animals.png) | ![水果分类](docs/images/screenshot_fruits.png) |
+
 ## 项目亮点
 
 - **四大启蒙分类**：涵盖动物、植物、蔬菜、水果，精选 80 个日常认知对象。
