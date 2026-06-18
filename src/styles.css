@@ -30,10 +30,14 @@ button {
 
 .book-stage {
   position: relative;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 20px;
   min-height: calc(100vh - 52px);
-  place-items: center;
-  overflow: hidden;
+  overflow-y: auto;
   border-radius: 10px;
   background:
     linear-gradient(rgba(33, 46, 27, 0.17), rgba(33, 46, 27, 0.17)),
@@ -432,10 +436,8 @@ button {
 }
 
 .category-tabs {
-  position: absolute;
+  position: relative;
   z-index: 6;
-  bottom: 30px;
-  left: 50%;
   display: flex;
   max-width: calc(100vw - 108px);
   overflow-x: auto;
@@ -444,7 +446,6 @@ button {
   border-radius: 999px;
   background: rgba(255, 250, 238, 0.86);
   box-shadow: 0 14px 32px rgba(27, 21, 13, 0.24);
-  transform: translateX(-50%);
   backdrop-filter: blur(8px);
 }
 
