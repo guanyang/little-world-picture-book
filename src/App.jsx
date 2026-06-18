@@ -2,10 +2,15 @@ import { useMemo, useRef, useState } from "react";
 import {
   CaretLeft,
   CaretRight,
+  Car,
   Carrot,
+  CloudSun,
+  Briefcase,
   FlowerTulip,
+  HouseLine,
   Leaf,
   PawPrint,
+  PersonSimple,
   Play,
   SpeakerHigh,
   UsersThree,
@@ -17,6 +22,11 @@ const iconMap = {
   plants: FlowerTulip,
   vegetables: Carrot,
   fruits: Leaf,
+  vehicles: Car,
+  "daily-items": HouseLine,
+  "weather-nature": CloudSun,
+  "body-parts": PersonSimple,
+  "jobs-tools": Briefcase,
 };
 
 const categories = bookCategories.map((category) => ({

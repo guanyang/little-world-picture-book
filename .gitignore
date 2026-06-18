@@ -2,6 +2,11 @@ node_modules/
 dist/
 .DS_Store
 .npm-cache/
+.baoyu-skills/
+.vscode/
+.codegraph/
+.claude/
+.agents/
 
 
 # Generated item source crops cache.

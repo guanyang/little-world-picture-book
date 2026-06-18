@@ -7,6 +7,7 @@
     "prepare-images": "node scripts/prepare-images.mjs",
     "dev": "npm run prepare-images && vite --host 127.0.0.1",
     "build": "npm run prepare-images && vite build",
+    "test": "node --test tests/*.test.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "compress-screenshots": "node scripts/compress-screenshots.mjs"
   },

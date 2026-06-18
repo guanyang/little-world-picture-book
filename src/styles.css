@@ -435,8 +435,10 @@ button {
   position: absolute;
   z-index: 6;
   bottom: 30px;
-  left: 37%;
+  left: 50%;
   display: flex;
+  max-width: calc(100vw - 108px);
+  overflow-x: auto;
   gap: 12px;
   padding: 11px;
   border-radius: 999px;
@@ -548,6 +550,36 @@ button {
 .theme-green .reading-bar button.active,
 .theme-green .audio-pin {
   background: #477c88;
+}
+
+.theme-sky .category-tabs button.selected,
+.theme-sky .reading-bar button.active,
+.theme-sky .audio-pin {
+  background: #2f78b7;
+}
+
+.theme-home .category-tabs button.selected,
+.theme-home .reading-bar button.active,
+.theme-home .audio-pin {
+  background: #b45f39;
+}
+
+.theme-weather .category-tabs button.selected,
+.theme-weather .reading-bar button.active,
+.theme-weather .audio-pin {
+  background: #3979a8;
+}
+
+.theme-body .category-tabs button.selected,
+.theme-body .reading-bar button.active,
+.theme-body .audio-pin {
+  background: #b76572;
+}
+
+.theme-job .category-tabs button.selected,
+.theme-job .reading-bar button.active,
+.theme-job .audio-pin {
+  background: #8b6a2f;
 }
 
 @keyframes pulse {
